@@ -7,17 +7,16 @@
     <nav class="navbar bg-body-tertiary">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img src="static/imagens/logo.png" alt="Logo" width="30" height="24"
+                <img src="static/imagens/logo.png" alt="Logo" width="60" height="60"
                     class="d-inline-block align-text-top">
-                CarreiraETEC
+                    CarreiraETEC
             </a>
 
             <ul class="navbar-nav mb-2 mb-lg-0 ">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Empresas</a>
+                    <a class="nav-link" href="empresa">Empresas</a>
                 </li>
             </ul>
-
         </div>
     </nav>
 
