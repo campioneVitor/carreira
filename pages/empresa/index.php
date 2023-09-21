@@ -14,8 +14,6 @@
   </div>
 </nav>
 
-
-
 <div class="container-fluid">
     <table class="table"> 
           <thead> 
@@ -36,11 +34,11 @@
             <?php
               }
             ?>
-
-
           </tbody>  
-    </table>  
+    </table>    
+
+
     <div id="div-add">
-          <i class="fa fa-plus-square" aria-hidden="true"></i>
-    </div> 
+       <a href="empresa/novo"><i class="fa fa-plus" aria-hidden="true"></i></a>
+    </div>  
 </div>    
