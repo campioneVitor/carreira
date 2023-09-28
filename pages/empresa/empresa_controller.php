@@ -1,6 +1,7 @@
 <?php
   require_once 'dominio/empresa.php';
  class EmpresaController {
+
      function incluir(Empresa $empresa){
 
      }
