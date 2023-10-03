@@ -2,6 +2,8 @@
   require_once 'dominio/empresa.php';
  class EmpresaController {
 
+   public $lista;
+
      function incluir(Empresa $empresa){
 
      }
@@ -32,7 +34,7 @@
         $empresa->setCidadeIbge(3549409);
         array_push($empresas,$empresa);
         
-        return $empresas;
+        $this->lista = $empresas;
      }
      function mostrar($id){
 
