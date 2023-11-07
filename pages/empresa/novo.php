@@ -73,6 +73,30 @@
 
 
      function carregarCidadesIBGE(){
-        
-     }
+        var selectEstado =document.getElementById("estados");
+        var estado = selectEstado.value;
+        let url = 'https://servicodados.ibge.gov.br/api/v1/localidades/estados/'+estado+'/municipios';
+        fetch(url)
+            .then(response => response.json())
+            .then(data => {
+                    if (data!=null && data.length>0) {
+                        var selectEstado = document.getElementById("cidade");
+
+                        selectCidade.innerHTML = ""; 
+
+                        data.forEach(element => {  
+                            let option = document.createElement('option');
+                            option.value= element['id'];
+                            option.innerText = element['nome'];
+                            selectEstado.appendChild(option);
+
+                        });
+
+
+                    }
+            }).catch(error => {
+                    console.log("Erro carregando estados "+error);
+                });;
+     } 
+     
 </script>    
