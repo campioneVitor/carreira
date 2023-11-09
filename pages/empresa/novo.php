@@ -49,10 +49,11 @@
             .then(response => response.json())
             .then(data => {
                     if (data!=null && data.length>0) {
+                        let ordenado = data.sort( (a,b)=>{ return a.nome.localCompare(b.nome)} )
 
                         
                         var selectEstado = document.getElementById("estados");
-                        data.forEach(element => {
+                        ordenado.forEach(element => {
                             
                             let option = document.createElement('option');
                             option.value= element['sigla'];
